@@ -74,6 +74,10 @@ body {
   color: var(--primary-dark);
 }
 
+.card + .card {
+  margin-top: 2px;
+}
+
 .card p {
   margin: 0 0 12px;
   color: var(--muted);
