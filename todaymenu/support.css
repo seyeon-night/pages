@@ -117,3 +117,18 @@ footer {
   color: var(--muted);
   font-size: 0.95rem;
 }
+
+.content ul {
+  padding-left: 18px;
+  margin: 8px 0 12px;
+  color: var(--muted);
+}
+
+.content li + li {
+  margin-top: 6px;
+}
+
+.content h3 {
+  margin: 12px 0 8px;
+  color: var(--primary-dark);
+}
