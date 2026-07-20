@@ -1,7 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="google-site-verification"
+      content="t8aH_08BepbpJwUbetvI-pJ4BI9tPhJTpKf7H_D447Y"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>우리집 밥상</title>
     <link rel="stylesheet" href="support.css" />
@@ -10,18 +14,63 @@
     <main class="page">
       <section class="hero">
         <p class="eyebrow">오늘 뭐 먹지?</p>
-        <h1>냉장고 재료와 가족 취향으로 메뉴를 추천해드려요</h1>
+        <h1>우리집 밥상</h1>
         <p class="sub">
-          우리집 밥상은 냉장고에 있는 재료를 간편하게 등록하고, 가족 구성원과 나의 요리 스타일을 반영해 오늘 만들기 좋은 메뉴를 추천해주는 앱입니다.
+          우리집 밥상은 냉장고에 있는 재료를 간편하게 등록하고, 가족 구성원과
+          나의 요리 스타일을 반영해 오늘 만들기 좋은 메뉴를 추천해주는 앱입니다.
         </p>
-        <a class="button" href="#services">서비스 자세히 보기</a>
+        <div class="hero-actions">
+          <a class="button" href="#services">서비스 자세히 보기</a>
+          <a class="button secondary" href="https://apps.apple.com/kr/app/%EC%9A%B0%EB%A6%AC%EC%A7%91-%EB%B0%A5%EC%83%81/id6788983086" target="_blank" rel="noopener noreferrer">아이폰 다운로드</a>
+          <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.seyeon.todaymenu" target="_blank" rel="noopener noreferrer">안드로이드 다운로드</a>
+        </div>
       </section>
 
       <div class="content">
+        <section class="card">
+          <h2>앱 화면 미리보기</h2>
+          <div class="app-gallery">
+            <button class="gallery-nav prev" type="button" aria-label="이전 이미지">
+              ‹
+            </button>
+            <div class="gallery-viewport">
+              <div class="gallery-track">
+                <div class="gallery-item">
+                  <img src="image/1000000949.jpg" alt="우리집 밥상 앱 메인 화면" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/1000000952.jpg" alt="우리집 밥상 앱 식단 추천 화면" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/1000000953.jpg" alt="우리집 밥상 앱 재료 등록 화면" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/1000000954.jpg" alt="우리집 밥상 앱 식단 관리 화면" />
+                </div>
+                <div class="gallery-item">
+                  <img src="image/1000000955.jpg" alt="우리집 밥상 앱 설정 화면" />
+                </div>
+              </div>
+            </div>
+            <button class="gallery-nav next" type="button" aria-label="다음 이미지">
+              ›
+            </button>
+          </div>
+        </section>
+
         <section class="card" id="services">
           <h2>서비스 소개</h2>
           <p>
-            냉장고 속 재료와 가족의 선호도를 바탕으로, 오늘의 식사를 더 쉽고 똑똑하게 정해주는 서비스입니다.
+            냉장고 속 재료와 가족의 선호도를 바탕으로, 오늘의 식사를 더 쉽고
+            똑똑하게 정해주는 서비스입니다.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>구글 로그인 사용 이유</h2>
+          <p>
+            구글 간편 로그인을 통해 사용자 계정을 생성하고 식단 데이터를
+            안전하게 저장/동기화하기 위함입니다.
           </p>
         </section>
 
@@ -30,7 +79,9 @@
           <div class="feature-grid">
             <article class="feature-item">
               <h3>냉장고 재료 관리</h3>
-              <p>보유한 식재료를 빠르게 등록하고 체계적으로 관리할 수 있어요.</p>
+              <p>
+                보유한 식재료를 빠르게 등록하고 체계적으로 관리할 수 있어요.
+              </p>
             </article>
             <article class="feature-item">
               <h3>가족 맞춤 추천</h3>
@@ -38,7 +89,10 @@
             </article>
             <article class="feature-item">
               <h3>요리 스타일 반영</h3>
-              <p>한식, 간단 요리, 건강식 등 원하는 스타일로 메뉴를 골라볼 수 있어요.</p>
+              <p>
+                한식, 간단 요리, 건강식 등 원하는 스타일로 메뉴를 골라볼 수
+                있어요.
+              </p>
             </article>
             <article class="feature-item">
               <h3>오늘의 메뉴 추천</h3>
@@ -57,6 +111,56 @@
           </ul>
         </section>
       </div>
+
+      <footer class="page-footer">
+        <a href="privacy_policy.html" class="footer-link">개인정보 처리방침</a>
+        <a href="support.html" class="footer-link">지원 센터</a>
+      </footer>
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const track = document.querySelector(".gallery-track");
+        const prevBtn = document.querySelector(".gallery-nav.prev");
+        const nextBtn = document.querySelector(".gallery-nav.next");
+        const items = Array.from(document.querySelectorAll(".gallery-item"));
+
+        if (!track || !prevBtn || !nextBtn || items.length === 0) {
+          return;
+        }
+
+        let currentIndex = 0;
+
+        const updateView = () => {
+          const firstItem = items[0];
+          if (!firstItem) {
+            return;
+          }
+
+          const gap = parseFloat(getComputedStyle(track).columnGap) || 14;
+          const itemWidth = firstItem.getBoundingClientRect().width + gap;
+          track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+
+          prevBtn.disabled = currentIndex === 0;
+          nextBtn.disabled = currentIndex >= items.length - 1;
+        };
+
+        prevBtn.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex -= 1;
+            updateView();
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (currentIndex < items.length - 1) {
+            currentIndex += 1;
+            updateView();
+          }
+        });
+
+        window.addEventListener("resize", updateView);
+        updateView();
+      });
+    </script>
   </body>
 </html>
